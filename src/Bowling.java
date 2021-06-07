@@ -92,8 +92,8 @@ public class Bowling {
     }
 
     public void CalculateScore(String[] input) {
-        if (input.length < 10) {
-            System.out.println("Too few arguments!");
+        if (input.length < 10 || input.length > 12) {
+            System.out.println("Incorrect number of arguments!");
         } else if (input.length >= 10) {
             for (int i = 0; i < 9; i++) {
                 int defaultIndex = i;
